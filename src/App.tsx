@@ -1,11 +1,13 @@
 import SideBar from "./components/SideBar";
 import ChatContainer from "./components/ChatContainer";
+import Login from "./components/Login ";
 
 function App() {
   return (
     <div className="flex">
-      <SideBar />
-      <ChatContainer />
+      <Login />
+      {/* <SideBar />
+      <ChatContainer /> */}
     </div>
   );
 }
