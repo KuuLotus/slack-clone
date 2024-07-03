@@ -7,6 +7,7 @@ const db = getFirestore(firebaseApp);
 export const getUser = async (user_uid: string) => {
   const usersRef = doc(db, "users", user_uid);
   const docSnap = await getDoc(usersRef);
+  console.log(docSnap.data());
   if (docSnap.exists()) {
     return docSnap.data() as User;
   }
